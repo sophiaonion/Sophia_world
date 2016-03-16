@@ -1,5 +1,8 @@
 body {
-    background: #333;
+    background-color: #00284d;
+    color: #00284d;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
 
 img { border: 0; max-width: 100%; }
@@ -32,14 +35,18 @@ img { border: 0; max-width: 100%; }
 .tldate {
     display: block;
     width: 200px;
-    background: #414141;
+    background: #ededed;
     border: 3px solid #212121;
-    color: #ededed;
     margin: 0 auto;
     padding: 3px 0;
     font-weight: bold;
     text-align: center;
-    -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0 0 11px darkgrey;
+    /*rgba(0,0,0,0.35);*/
+}
+
+.tldate h3{
+    margin-top: 10px;
 }
 
 .timeline li {
