@@ -477,7 +477,7 @@ p {
   opacity: 0.6;
 }
 .year {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
@@ -710,6 +710,11 @@ ul.portfolio-image li .desc{
   box-shadow: 0px 0px 0px #818181;
   transition: all 0.2s ease 0s;
   -webkit-transform: translateY(0px) translateX(0px);
+
+  -webkit-filter:contrast(80%);
+  -moz-filter:contrast(80%);
+   filter: url(#contrast);
+  filter:contrast(80%);
 }
 .wrap-card:before,
 .wrap-card:after {
@@ -733,19 +738,24 @@ ul.portfolio-image li .desc{
   -webkit-transform-origin: 100% 0;
 }
 .wrap-card:hover {
-  box-shadow: 20px 20px 0px #818181;
+  /*box-shadow: 20px 20px 0px #818181;
   -webkit-transform: translateY(-10px) translateX(-10px);
-  transition: all 0.2s ease 0.4s;
+  transition: all 0.2s ease 0.4s;*/
+  -webkit-filter:contrast(90%);
+  -moz-filter:contrast(90%);
+   filter: url(#contrast);
+  filter:contrast(90%);
 }
 .wrap-card:hover:after,
 .wrap-card:hover:before {
-  -webkit-transform: scaleX(1);
+  /*-webkit-transform: scaleX(1);*/
 }
 .card {
   background: #ffffff;
-  padding: 25px 30px 30px 30px;
-  margin-bottom: 30px;
+  padding: 25px 30px 10px 30px;
+  margin-bottom: 50px;
   border: 1px solid rgba(129, 129, 129, 0.1);
+  text-align: center;
 }
 .card:before,
 .card:after {
@@ -770,7 +780,7 @@ ul.portfolio-image li .desc{
 }
 .card:hover:after,
 .card:hover:before {
-  -webkit-transform: scaleY(1);
+  /*-webkit-transform: scaleY(1);*/
 }
 /*---------- d. testimonial -----------*/
 #testimonial {
